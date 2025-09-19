@@ -26,7 +26,7 @@ if [ -n "$requirements" ]; then
 fi
 
 if [ $# -lt 1 ]; then
-  scripts=*.py
+  scripts=$(ls *.py)
 else
   scripts="$@"
 fi
